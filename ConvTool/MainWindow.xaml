@@ -1,0 +1,151 @@
+﻿<Window x:Class="ConvTool.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ConvTool"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize" 
+        Title="ConvTool (ver. 1.1)" Width="800" Height="700
+" MinWidth="800" MinHeight="600">
+    <Grid>
+        <StackPanel Height="20" VerticalAlignment="Top">
+            <Menu HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="800
+                  " Margin="0,-2,0,0" RenderTransformOrigin="0.483,2.19">
+                <MenuItem Header="File">
+                    <MenuItem Header="Exit" HorizontalAlignment="Left" Width="140" />
+                </MenuItem>
+                <MenuItem Header="Help">
+                    <MenuItem Header="About" HorizontalAlignment="Left" Width="140" />
+                </MenuItem>
+            </Menu>
+        </StackPanel>
+        <TabControl Margin="6,177,3.6,4" Width="784" HorizontalAlignment="Center" VerticalAlignment="Center" Height="491">
+            <TabItem Header="General" Width="120" Height="30">
+                <Grid Background="#FFE5E5E5" Margin="0,0,-7.6,-4.8" HorizontalAlignment="Center" VerticalAlignment="Center" Width="782" Height="456">
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <TextBox Name="HeaderDocumentation"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Grid.Column="0" Grid.Row="0" BorderThickness="1" FontWeight="Bold" />
+                    <TextBox Name="HeaderProject"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Grid.Column="0" Grid.Row="1" FontWeight="Bold" />
+                    <TextBox Name="HeaderPSP"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Grid.Column="0" Grid.Row="2" FontWeight="Bold" />
+                    <TextBox Name="HeaderActuator"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Grid.Column="0" Grid.Row="3" FontWeight="Bold" />
+                    <TextBox Name="HeaderUser"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Grid.Column="0" Grid.Row="4" FontWeight="Bold" />
+                    <TextBox Name="HeaderMeasurementNumber"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Grid.Column="0" Grid.Row="5" FontWeight="Bold" />
+
+
+                    <TextBox Name="ProjectContent"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="528" Grid.Column="1" Grid.Row="1" />
+                    <TextBox Name="PSPContent"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="528" Grid.Column="1" Grid.Row="2" />
+                    <TextBox Name="ActuatorContent"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="528" Grid.Column="1" Grid.Row="3" />
+                    <TextBox Name="UserContent"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="528" Grid.Column="1" Grid.Row="4" />
+                    <TextBox Name="MeasurementNumberContent"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="528" Grid.Column="1" Grid.Row="5" />
+
+                    <TextBox Name="HeaderASAM3_INCA_Configuration"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Grid.Column="0" Grid.Row="7" BorderThickness="1" FontWeight="Bold" />
+                    <TextBox Name="HeaderHostNameIP"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Grid.Column="0" Grid.Row="8" FontWeight="Bold" />
+                    <TextBox Name="HeaderProjectPath"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Grid.Column="0" Grid.Row="9" FontWeight="Bold" />
+                    <TextBox Name="HeaderDataSet"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Grid.Column="0" Grid.Row="10" FontWeight="Bold" />
+
+                    <TextBox Name="HostNameIPContent"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="528" Grid.Column="1" Grid.Row="8" />
+                    <TextBox Name="ProjectPathContent"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="528" Grid.Column="1" Grid.Row="9" />
+                    <TextBox Name="DataSetContent"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="528" Grid.Column="1" Grid.Row="10" />
+
+                    <TextBox Name="HeaderBatteryVoltageControl"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Grid.Column="0" Grid.Row="12" BorderThickness="1" FontWeight="Bold" />
+                    <TextBox Name="HeaderBatteryVoltageControlEnabler"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Grid.Column="0" Grid.Row="13" FontWeight="Bold" />
+                    <TextBox Name="HeaderINCAVoltageVariable"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Grid.Column="0" Grid.Row="14" FontWeight="Bold" />
+                    <TextBox Name="HeaderConditioningVoltage"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Grid.Column="0" Grid.Row="15" FontWeight="Bold" />
+                    <TextBox Name="HeaderAngleCodeOpening"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Grid.Column="0" Grid.Row="16" FontWeight="Bold" />
+                    <TextBox Name="HeaderAngleCodeClosing"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Grid.Column="0" Grid.Row="17" FontWeight="Bold" />
+
+                    <TextBox Name="BatteryVoltageControlEnablerContent"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="528" Grid.Column="1" Grid.Row="13" />
+                    <TextBox Name="INCAVoltageVariableContent"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="528" Grid.Column="1" Grid.Row="14" />
+                    <TextBox Name="ConditioningVoltageContent"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="528" Grid.Column="1" Grid.Row="15" />
+                    <TextBox Name="AngleCodeOpeningContent"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="528" Grid.Column="1" Grid.Row="16" />
+                    <TextBox Name="AngleCodeClosingContent"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="528" Grid.Column="1" Grid.Row="17" />
+                </Grid >
+            </TabItem>
+            <TabItem Header="Oil Pressure Map" Width="120" Height="30">
+                <Grid Background="#FFE5E5E5" Margin="0,0,-3.6,-0.4" HorizontalAlignment="Center" VerticalAlignment="Center" Width="778" Height="450">
+                    <ListView Name="OilPressureMapView"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Cond Case" Width="120" Height="30">
+                <Grid Background="#FFE5E5E5" Width="779" HorizontalAlignment="Center" VerticalAlignment="Center" Height="456" Margin="0,0,-4.6,-4.8">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="23" />
+                        <RowDefinition Height="23" />
+                        <RowDefinition Height="23" />
+                        <RowDefinition Height="23" />
+                        <RowDefinition Height="23" />
+                        <RowDefinition Height="23" />
+                        <RowDefinition Height="23" />
+                        <RowDefinition Height="23" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="250"/>
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <TextBox Name="HeaderSpeed" Text="SPEED"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Grid.Column="0" Grid.Row="0" BorderThickness="1" FontWeight="Bold" />
+                    <TextBox Name="HeaderSpeed1"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Grid.Column="0" Grid.Row="1" FontWeight="Bold" />
+                    <TextBox Name="HeaderSpeed2"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Grid.Column="0" Grid.Row="2" FontWeight="Bold" />
+                    <TextBox Name="HeaderTemperature" Text="TEMPERATURE" Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Grid.Column="0" Grid.Row="4" FontWeight="Bold" Grid.ColumnSpan="2" />
+                    <TextBox Name="HeaderTemp1"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Grid.Column="0" Grid.Row="5" FontWeight="Bold" />
+                    <TextBox Name="HeaderTemp2"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Grid.Column="0" Grid.Row="6" FontWeight="Bold" />
+                    <TextBox Name="Speed1Content" Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="528" Grid.Column="1" Grid.Row="1" />
+                    <TextBox Name="Speed2Content" Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="528" Grid.Column="1" Grid.Row="2" />
+                    <TextBox Name="Temp1Content"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="528" Grid.Column="1" Grid.Row="5" />
+                    <TextBox Name="Temp2Content"  Height="23" HorizontalAlignment="Left" VerticalAlignment="Top" Width="528" Grid.Column="1" Grid.Row="6" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Setpoints" Width="120" Height="30">
+                <Grid Background="#FFE5E5E5" Width="801" HorizontalAlignment="Center" VerticalAlignment="Center" Height="450" Margin="-13,0,-13.6,0">
+                    <ListView Margin="10,47,10,0" Name="SetpointsView"></ListView>
+                    <Label Content="Speed" Width="37" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="54,8,710,410" Height="32" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment ="Center" BorderThickness="2" BorderBrush="Black" FontSize="8" />
+                    <Label Content="Opn.Angl" Width="50" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="90,8,661,410" Height="32" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment ="Center" BorderThickness="2" BorderBrush="Black" FontSize="8" />
+                    <Label Content="Table" Width="97" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="349,8,355,410" Height="32" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment ="Center" BorderThickness="2" BorderBrush="Black" FontSize="8" />
+                    <Label Content="Cls.Angl" Width="57" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="138,8,606,410" Height="32" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment ="Center" BorderThickness="2" BorderBrush="Black" FontSize="8" />
+                    <Label Content="Temp." Width="44" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="12,8,745,410" Height="32" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment ="Center" BorderThickness="2" BorderBrush="Black" FontSize="8"/>
+                    <Label Content="TOilCond" Width="50" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="193,8,558,410" Height="32" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment ="Center" BorderThickness="2" BorderBrush="Black" FontSize="8" />
+                    <Label Content="TCoilCond" Width="55" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="241,8,505,410" Height="32" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment ="Center" BorderThickness="2" BorderBrush="Black" FontSize="8" />
+                    <Label Content="Time Dur" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="294,8,451,410" Height="32" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment ="Center" BorderThickness="2" BorderBrush="Black" FontSize="8" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="XML" Width="120" Height="30">
+                <Grid Background="#FFE5E5E5" Margin="0,0,-3.6,-0.4" HorizontalAlignment="Center" VerticalAlignment="Center" Width="778" Height="450">
+                    <TextBox Name="XMLView" TextWrapping="Wrap" Margin="0,0,10,0"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Label Content="Path to MS Excel file (e.g. C:\bench\TestFile.xls)" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" />
+        <TextBox Name ="ExcelFile_Path" HorizontalAlignment="Left" Height="30" Margin="10,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="725"/>
+        <Button Click="ExcelFilePath_Click"  Content="..." HorizontalAlignment="Left" Margin="743,46,0,0" VerticalAlignment="Top" Width="35" Height="30"/>
+        <TextBlock Name="Dll" HorizontalAlignment="Left" Margin="464,25,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="194"/>
+        <Label Content="Path to target location (e.g. C:\bench)" HorizontalAlignment="Left" Margin="10,82,0,0" VerticalAlignment="Top" />
+        <TextBox Name ="TargetLocation_Path" HorizontalAlignment="Left" Height="30" Margin="10,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="725"/>
+        <Button Click="TargetLocationPath_Click"  Content="..." HorizontalAlignment="Left" Margin="743,108,0,0" VerticalAlignment="Top" Width="35" Height="30"/>
+        <Button Click ="Generate_Click" Content="Generate" HorizontalAlignment="Left" Margin="658,156,0,0" VerticalAlignment="Top" Width="120" Height="38"/>
+    </Grid>
+</Window>
